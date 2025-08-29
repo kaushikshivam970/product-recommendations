@@ -137,7 +137,7 @@ GET /api/v1/app/recommendations/get-recommendation?productId=p1&userId=u1
 → returns top 5 recommendations
 
 #Sample Output
-
+````json
 {
   "statusText": "OK",
   "status": 200,
@@ -159,7 +159,7 @@ GET /api/v1/app/recommendations/get-recommendation?productId=p1&userId=u1
     ]
   }
 }
-
+````
 
 
 ````
