@@ -110,24 +110,24 @@ README.md
 PORT = 3000
 
 
-## How to run
+# How to run
 
-# Clone the repo
+## Clone the repo
 git clone https://github.com/kaushikshivam970/product-recommendations.git
 cd product-recommendation
 
-# Install dependencies
+## Install dependencies
 npm install
 
-# Run server
+## Run server
 npm start
 
 
-# Open frontend in browser
+## Open frontend in browser
 
 http://localhost:3000/
 
-### API Endpoints
+## API Endpoints
 
 GET /api/v1/app/recommendations/products → list of products
 
@@ -136,7 +136,7 @@ GET /api/v1/app/recommendations/users → list of users
 GET /api/v1/app/recommendations/get-recommendation?productId=p1&userId=u1
 → returns top 5 recommendations
 
-#Sample Output
+##Sample Output
 ````json
 {
   "statusText": "OK",
@@ -159,6 +159,7 @@ GET /api/v1/app/recommendations/get-recommendation?productId=p1&userId=u1
     ]
   }
 }
+
 ````
 
 
