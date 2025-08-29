@@ -74,6 +74,8 @@ If a **userId** is provided, we add a **user boost**:
 
 ## 📁 Project Structure
 
+```bash
+
 data/
 ├── products.json
 └── purchases.json
@@ -101,6 +103,8 @@ src/
 package-lock.json
 package.json
 README.md
+
+````
 
 #.env
 PORT = 3000
