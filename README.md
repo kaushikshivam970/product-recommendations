@@ -58,6 +58,9 @@ If a **userId** is provided, we add a **user boost**:
   },
   ...
 ]
+```
+
+
 
 
 ### `purchases.json`
@@ -66,6 +69,8 @@ If a **userId** is provided, we add a **user boost**:
   { "userId": "u1", "products": ["p1","p4","p7"] },
   { "userId": "u2", "products": ["p2","p3"] }
 ]
+
+```
 
 ## Project Structure
 
