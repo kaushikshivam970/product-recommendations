@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Recommendations Demo</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 20px;
+      }
+      select,
+      button {
+        margin: 5px;
+        padding: 5px;
+      }
+      ul {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Product Recommendations</h1>
+
+    <label
+      >User:
+      <select id="uid"></select>
+    </label>
+
+    <label
+      >Product:
+      <select id="pid"></select>
+    </label>
+
+    <button id="go">Get Recommendations</button>
+
+    <h3>Results:</h3>
+    <ul id="list"></ul>
+
+    <script>
+      const uid = document.getElementById("uid");
+      const pid = document.getElementById("pid");
+      const list = document.getElementById("list");
+
+      // fill dropdown
+      function fill(select, items, valueFn, labelFn) {
+        select.innerHTML = "";
+        items.forEach((it) => {
+          const opt = document.createElement("option");
+          opt.value = valueFn(it);
+          opt.textContent = labelFn(it);
+          select.appendChild(opt);
+        });
+      }
+
+      // load users + products
+      Promise.all([
+        fetch("/api/v1/app/recommendations/products").then((r) => r.json()),
+        fetch("/api/v1/app/recommendations/users").then((r) => r.json()),
+      ]).then(([prodRes, userRes]) => {
+        const products = prodRes.data.products;
+        const users = userRes.data.users;
+        fill(
+          pid,
+          products,
+          (p) => p.id,
+          (p) => p.title
+        );
+        fill(
+          uid,
+          users,
+          (u) => u.id,
+          (u) => u.id
+        );
+      });
+
+      // click handler
+      document.getElementById("go").addEventListener("click", () => {
+        const productId = pid.value;
+        const userId = uid.value;
+        const url = `/api/v1/app/recommendations/get-recommendation?productId=${productId}&userId=${userId}`;
+
+        fetch(url)
+          .then((r) => r.json())
+          .then((res) => {
+            const recs = res.data.recommendations;
+            list.innerHTML = "";
+            recs.forEach((r) => {
+              const li = document.createElement("li");
+              li.textContent = `${r.title} — ${r.brand} (${
+                r.category
+              }) | score: ${r._score.toFixed(2)}`;
+              list.appendChild(li);
+            });
+          });
+      });
+    </script>
+  </body>
+</html>

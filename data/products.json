@@ -1,0 +1,98 @@
+[
+  {
+    "id": "p1",
+    "title": "Nike Air Zoom Pegasus",
+    "category": "shoes",
+    "brand": "Nike",
+    "price": 6499,
+    "tags": ["running", "men", "lightweight"]
+  },
+  {
+    "id": "p2",
+    "title": "Adidas Ultraboost 21",
+    "category": "shoes",
+    "brand": "Adidas",
+    "price": 7999,
+    "tags": ["running", "unisex", "premium"]
+  },
+  {
+    "id": "p3",
+    "title": "Puma Velocity Nitro",
+    "category": "shoes",
+    "brand": "Puma",
+    "price": 5699,
+    "tags": ["running", "men", "cushion"]
+  },
+  {
+    "id": "p4",
+    "title": "Nike Dri-FIT Tee",
+    "category": "apparel",
+    "brand": "Nike",
+    "price": 1499,
+    "tags": ["tshirt", "unisex", "running"]
+  },
+  {
+    "id": "p5",
+    "title": "Adidas AEROREADY Tee",
+    "category": "apparel",
+    "brand": "Adidas",
+    "price": 1399,
+    "tags": ["tshirt", "men", "training"]
+  },
+  {
+    "id": "p6",
+    "title": "Puma Essential Tee",
+    "category": "apparel",
+    "brand": "Puma",
+    "price": 1299,
+    "tags": ["tshirt", "men", "sportswear"]
+  },
+  {
+    "id": "p7",
+    "title": "Socks 3-Pack",
+    "category": "accessories",
+    "brand": "Generic",
+    "price": 399,
+    "tags": ["socks", "cotton", "basic"]
+  },
+  {
+    "id": "p8",
+    "title": "Running Cap",
+    "category": "accessories",
+    "brand": "Generic",
+    "price": 599,
+    "tags": ["cap", "running", "sun-protection"]
+  },
+  {
+    "id": "p9",
+    "title": "Stainless Steel Bottle 750ml",
+    "category": "accessories",
+    "brand": "Generic",
+    "price": 699,
+    "tags": ["bottle", "gym", "hydration"]
+  },
+  {
+    "id": "p10",
+    "title": "Garmin Forerunner 55",
+    "category": "electronics",
+    "brand": "Garmin",
+    "price": 19999,
+    "tags": ["watch", "gps", "running"]
+  },
+  {
+    "id": "p11",
+    "title": "Boat Airdopes 141",
+    "category": "electronics",
+    "brand": "boAt",
+    "price": 1499,
+    "tags": ["earbuds", "music", "gym"]
+  },
+  {
+    "id": "p12",
+    "title": "Nike Gym Duffel Bag",
+    "category": "bags",
+    "brand": "Nike",
+    "price": 2599,
+    "tags": ["bag", "gym", "travel"]
+  }
+]

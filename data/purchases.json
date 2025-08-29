@@ -1,0 +1,12 @@
+[
+  { "userId": "u1", "products": ["p1", "p4", "p7"] },
+  { "userId": "u2", "products": ["p2", "p4", "p8"] },
+  { "userId": "u3", "products": ["p1", "p7"] },
+  { "userId": "u4", "products": ["p2", "p10", "p8"] },
+  { "userId": "u5", "products": ["p3", "p6", "p7"] },
+  { "userId": "u6", "products": ["p1", "p2", "p4"] },
+  { "userId": "u7", "products": ["p12", "p9", "p11"] },
+  { "userId": "u8", "products": ["p3", "p4", "p9"] },
+  { "userId": "u9", "products": ["p2", "p7", "p12"] },
+  { "userId": "u10", "products": ["p1", "p10", "p8"] }
+]
