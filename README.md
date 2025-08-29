@@ -72,24 +72,30 @@ If a **userId** is provided, we add a **user boost**:
 
 ````
 
-## Project Structure
+## 📁 Project Structure
 
 data/
-  products.json
-  purchases.json
+├── products.json
+└── purchases.json
+
 public/
-  index.html                     # Simple frontend to test recommendations
+└── index.html # Simple frontend to test recommendations
+
 src/
-  controller/Recommendation/
-    RecommendationController.mjs
-  helper/
-    dataStoreHelper.mjs           # Loads products & purchases, builds co-purchase + user profiles
-    recommendationHelper.mjs      # Core recommendation logic
-  routes/RecommendationRoutes/
-    recommendationRoutes.mjs
-  routes.mjs
-  server/server.mjs               # Express server exposing APIs
-  index.mjs
+├── controller/
+│ └── Recommendation/
+│ └── RecommendationController.mjs
+├── helper/
+│ ├── dataStoreHelper.mjs # Loads products & purchases, builds co-purchase + user profiles
+│ └── recommendationHelper.mjs # Core recommendation logic
+├── routes/
+│ ├── RecommendationRoutes/
+│ │ └── recommendationRoutes.mjs
+│ └── routes.mjs
+├── server/
+│ └── server.mjs # Express server exposing APIs
+└── index.mjs
+
 .env
 .gitignore
 package-lock.json
