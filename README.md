@@ -114,7 +114,6 @@ PORT = 3000
 
 ## Clone the repo
 git clone https://github.com/kaushikshivam970/product-recommendations.git
-cd product-recommendation
 
 ## Install dependencies
 npm install
